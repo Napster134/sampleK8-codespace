@@ -1,0 +1,30 @@
+{
+    "name": "K8-Codepsace",
+    "postCreateCommand": "chmod +x .devcontainer/init.sh && .devcontainer/init.sh",
+    "postStartCommand": "chmod +x .devcontainer/start.sh && .devcontainer/start.sh",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    "remoteEnv": {
+        "CI": "true"
+    },
+    "forwardPorts": [8461, 8462, 8463, 8464, 8465],
+    "portsAttributes": {
+        "8461": {
+            "label": "test"
+        },
+        "8462": {
+            "label": "test"
+        },
+        "8463": {
+            "label": "test"
+        },
+        "8464": {
+            "label": "test"
+        },
+        "8465": {
+            "label": "test"
+        }
+    }
+  }
