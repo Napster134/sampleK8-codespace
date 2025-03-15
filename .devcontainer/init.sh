@@ -1,6 +1,9 @@
-git clone https://github.com/stefanprodan/flux-local-dev.git
-cd flux-local-dev
+# Pull resources needed to start a test cluster with flux.
+mkdir test-cluster
+git clone https://github.com/stefanprodan/flux-local-dev.git test-cluster
+cd test-cluster
 
+# Install brew for dep
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo >> /home/codespace/.bashrc
